@@ -222,6 +222,15 @@ main {
     padding: 5%;
     color: #3a3a3a; 
 }
+
+/* Media query: larger or landscapes phones (576px and up) */
+@media screen and (min-width: 576px){
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* header */
@@ -280,6 +289,11 @@ main {
 
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
+
 }
 
 /* Large devices ( laptops and desktops, 992 px and up) */
@@ -287,6 +301,10 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
 
+    }
+        /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
